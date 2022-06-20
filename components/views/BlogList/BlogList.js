@@ -68,7 +68,7 @@ export default props => {
                         title={item.title}
                         body={item.body}
                         id={item.id}
-                        onPressEdit={() => props.navigation.navigate('BlogForm', { id: item.id })}
+                        onPressEdit={() => props.navigation.navigate('BlogForm', { id: item.id, title: item.title, body: item.body, userId: item.userId })}
                         onPressDelete={() => confirmDelete(item.id)}
 
                         
